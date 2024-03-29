@@ -3,6 +3,8 @@ import localFont from 'next/font/local'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
+import { Toaster } from '@/components/ui/sonner'
+
 const bubblyFont = localFont({
   src: '../../public/fonts/DailyBubble-OGGdA.ttf',
   variable: '--font-bubbly',
@@ -58,6 +60,7 @@ export default function RootLayout({
       <body className={`${bubblyFont.variable} ${inter.className}`}>
         {children}
       </body>
+      <Toaster />
     </html>
   )
 }

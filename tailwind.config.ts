@@ -1,7 +1,6 @@
 import type { Config } from 'tailwindcss'
 
 const config = {
-  darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -18,6 +17,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        hero: "url('/images/hero.webp')",
+      },
       fontFamily: {
         bubbly: ['var(--font-bubbly)'],
       },

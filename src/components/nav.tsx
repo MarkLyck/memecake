@@ -111,7 +111,7 @@ export function NavigationBar() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger>FAQ</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 lg:w-[600px] md:w-[500px] md:grid-cols-2">
@@ -126,7 +126,7 @@ export function NavigationBar() {
               ))}
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <NavigationMenuLink
             href="https://twitter.com/memecakelol"
@@ -135,7 +135,7 @@ export function NavigationBar() {
             className={navigationMenuTriggerStyle()}
           >
             <Image
-              src="/images/x_social_media_icon.svg"
+              src="/images/socials/x_social_media_icon.svg"
               alt="X"
               height={16}
               width={16}
@@ -147,7 +147,7 @@ export function NavigationBar() {
         <NavigationMenuItem>
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
             <Image
-              src="/images/telegram_icon.svg"
+              src="/images/socials/telegram_icon.svg"
               alt="X"
               height={16}
               width={16}
@@ -159,7 +159,7 @@ export function NavigationBar() {
         <NavigationMenuItem>
           <NavigationMenuLink className={navigationMenuTriggerStyle()}>
             <Image
-              src="/images/instagram_icon.svg"
+              src="/images/socials/instagram_icon.svg"
               alt="X"
               height={16}
               width={16}
