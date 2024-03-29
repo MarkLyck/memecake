@@ -2,7 +2,7 @@
 import { CopyIcon } from 'lucide-react'
 import copy from 'copy-to-clipboard'
 import { toast } from 'sonner'
-
+import { emojiBlast, emojiBlasts } from 'emoji-blast'
 import { Button } from '@/components/ui/button'
 
 const TOKEN = 'PLACEHOLDER_1XWA1T41Cd5LVVxHsv91P3Ahq3pcTK'
@@ -19,9 +19,39 @@ export const Hero = () => {
         </h2>
         <p className="flex justify-center">
           <Button
-            onClick={() => {
+            onClick={(e) => {
               copy(TOKEN)
-              toast('Copied token to clipboard!')
+              toast('🎉 Copied token to clipboard!')
+              emojiBlast({
+                emojis: [
+                  '🧁',
+                  '🎂',
+                  '🍰',
+                  '🧁',
+                  '🍥',
+                  '🥮',
+                  '🤑',
+                  '😃',
+                  '🧁',
+                  '🌈',
+                  '😹',
+                  '😀',
+                  '😁',
+                  '🧁',
+                  '🫠',
+                  '🍆',
+                  '🙀',
+                  '🧀',
+                  '🧁',
+                  '🎉',
+                  '🥳',
+                  '🎊',
+                ],
+                position: () => ({
+                  x: e.clientX,
+                  y: e.clientY,
+                }),
+              })
             }}
             variant="outline"
             className="flex items-center justify-center gap-4 rounded-full p-4 text-center"
