@@ -3,6 +3,7 @@
 import { NavigationBar } from '@/components/nav'
 import { Hero } from '@/components/hero'
 import { Tokenomics } from '@/components/Tokenomics'
+import { Roadmap } from '@/components/roadmap'
 import { Footer } from '@/components/footer'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       </div>
       <Hero />
       <Tokenomics />
+      <Roadmap />
       <Footer />
     </main>
   )
