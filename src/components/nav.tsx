@@ -111,22 +111,13 @@ export function NavigationBar() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
-          <NavigationMenuTrigger>FAQ</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 lg:w-[600px] md:w-[500px] md:grid-cols-2">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem> */}
+        <NavigationMenuItem>
+          <Link href="/#roadmap" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <span>Roadmap</span>
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
             href="https://twitter.com/memecakelol"
