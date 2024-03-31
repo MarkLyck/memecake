@@ -21,9 +21,12 @@ const tokenomicsMemes = [
 
 export const Tokenomics = () => (
   <div className="p-8">
-    <h2 className="mb-8 text-center font-bubbly text-[2.5rem] text-green-500">
+    <h2 className="text-center font-bubbly text-[2.5rem] text-green-500">
       Tokenomics
     </h2>
+    <p className="mb-8 text-center mx-auto max-w-[600px] text-gray-500 dark:text-gray-400 lg:text-base/relaxed md:text-xl/relaxed xl:text-xl/relaxed">
+      Fairness, transparency and sugar are at the heart of every MemeCake
+    </p>
     <ul className="flex flex-wrap justify-center gap-8">
       {tokenomicsMemes.map((tokenomic) => (
         <li className="flex flex-col items-center gap-2">
